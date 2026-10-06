@@ -191,8 +191,8 @@
         per informazioni e prenotazioni.
     </p>
 
-    <form class="modulo-contatto" action="https://formspree.io/f/xyekkwgk" method="POST">
-        <input type="hidden" name="_next" value="https://carloex.github.io/Parti-in-bus-calabria/grazie.html">
+    <form id="contact-form" class="modulo-contatto">
+       
 
         <div class="campo">
             <label for="nome">Nome e cognome</label>
@@ -287,6 +287,27 @@
     </div>
 
 </footer>
+<div data-fs-success></div>
+<div data-fs-error></div>
+
+<script>
+    window.formspree =
+        window.formspree ||
+        function () {
+            (formspree.q = formspree.q || []).push(arguments);
+        };
+
+    formspree('initForm', {
+        formElement: '#contact-form',
+        formId: 'xyekkwgk',
+
+        onSuccess: function () {
+            window.location.href = 'grazie.html';
+        }
+    });
+</script>
+
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 
 </html>
