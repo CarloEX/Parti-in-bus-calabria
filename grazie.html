@@ -38,7 +38,8 @@
         }
 
         .conferma {
-            max-width: 600px;
+            max-width: 650px;
+            width: 100%;
             background: white;
             color: #17202a;
             padding: 45px 35px;
@@ -57,27 +58,70 @@
             color: #17202a;
         }
 
-        p {
+        .testo {
             color: #66727d;
             font-size: 17px;
             line-height: 1.6;
             margin-bottom: 30px;
         }
 
-        .button {
+        .social-titolo {
+            color: #17202a;
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+
+        .social a,
+        .home-button {
             display: inline-block;
-            background-color: #f47b20;
-            color: white;
-            padding: 14px 28px;
+            padding: 13px 22px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
             transition: 0.3s;
         }
 
-        .button:hover {
-            background-color: #ff8c2b;
+        .instagram {
+            background-color: #f47b20;
+            color: white;
+        }
+
+        .tiktok {
+            background-color: #17202a;
+            color: white;
+        }
+
+        .home-button {
+            background-color: white;
+            color: #17202a;
+            border: 2px solid #17202a;
+        }
+
+        .social a:hover,
+        .home-button:hover {
             transform: translateY(-3px);
+        }
+
+        .instagram:hover {
+            background-color: #ff8c2b;
+        }
+
+        .tiktok:hover {
+            background-color: #263746;
+        }
+
+        .home-button:hover {
+            background-color: #17202a;
+            color: white;
         }
 
     </style>
@@ -92,14 +136,34 @@
 
         <h1>Richiesta inviata!</h1>
 
-        <p>
+        <p class="testo">
             Grazie per averci contattato.<br>
             Abbiamo ricevuto la tua richiesta e ti risponderemo
             il prima possibile.
         </p>
 
-        <a href="index.html" class="button">
-            Torna al sito
+        <p class="social-titolo">
+            Nel frattempo, seguici sui nostri social!
+        </p>
+
+        <div class="social">
+
+            <a href="https://www.instagram.com/partiinbuscalabria"
+               target="_blank"
+               class="instagram">
+                Instagram
+            </a>
+
+            <a href="https://www.tiktok.com/@_.parti.in.bus.calabria_"
+               target="_blank"
+               class="tiktok">
+                TikTok
+            </a>
+
+        </div>
+
+        <a href="index.html" class="home-button">
+            ← Torna al sito
         </a>
 
     </div>
