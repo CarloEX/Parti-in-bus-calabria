@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Parti in Bus Calabria</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            PARTI IN BUS CALABRIA
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#viaggi">Viaggi</a>
+            <a href="#chi-siamo">Chi siamo</a>
+            <a href="#contatti">Contatti</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+  <section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            PARTI IN BUS CALABRIA
+        </span>
+
+        <p class="hero-text">
+            Vivi concerti, eventi, gite e nuove destinazioni
+            partendo dalla Calabria.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#viaggi" class="button">
+                Scopri i viaggi
+            </a>
+
+            <a href="#contatti" class="button-secondario">
+                Contattaci
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+            
+
+        </section>
+
+
+        <section id="viaggi" class="viaggi">
+
+            <h2>Prossimi viaggi</h2>
+
+            <p class="descrizione">
+                Scopri le prossime partenze e scegli la tua destinazione.
+            </p>
+
+ <div class="viaggi-container">
+
+    <!-- VIAGGIO 1 -->
+
+<<div class="viaggio-card">
+
+    <div class="viaggio-immagine">
+        <img src="https://www.civitatis.com/f/italia/camigliatello-silano/senderismo-parque-sila-r32.jpg" alt="Camigliatello Silano - Sila">
+    </div>
+
+    <div class="viaggio-info">
+
+        <span class="viaggio-data">18 OTTOBRE</span>
+
+        <h3>Camigliatello Silano</h3>
+
+        <p class="viaggio-dettagli">
+            📅 18 ottobre<br>
+            🚌 Partenza da Locri: 06:30<br>
+            🕔 Rientro: 17:00<br>
+            💰 €35 a persona
+        </p>
+
+        <p>
+            Stand gastronomici, musica dal vivo,
+            castagne e tanto altro da vivere insieme!
+        </p>
+
+        <div class="viaggio-bottom">
+
+            <span class="prezzo">
+                Prezzo <strong>€35</strong>
+            </span>
+
+            <a href="#contatti" class="button">
+                Prenota
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <!-- VIAGGIO 2 -->
+
+  <div class="viaggio-card">
+
+    <div class="viaggio-immagine">
+        <img src="https://static.fram.fr/photos/vacances-italie/brindisi/alberobello-les-pouilles-et-le-salento-au-volant-arrivee-brindisi_883846_panohd.jpg" alt="Alberobello - Puglia">
+    </div>
+
+    <div class="viaggio-info">
+
+        <span class="viaggio-data">5 - 6 DICEMBRE</span>
+
+        <h3>Bari</h3>
+
+        <p class="viaggio-dettagli">
+            📅 5 - 6 dicembre<br>
+            🚌 Partenze dalle stesse fermate<br>
+            💰 €175 a persona
+        </p>
+
+        <p>
+    Bari, Locorotondo, Alberobello, Polignano
+    e Ostuni in un unico fantastico viaggio.
+</p>
+
+<p class="scadenza">
+    ⚠️ Prenotazioni entro il 20 ottobre
+</p>
+
+        <div class="viaggio-bottom">
+
+            <span class="prezzo">
+                Prezzo <strong>€175</strong>
+            </span>
+
+            <a href="#contatti" class="button">
+                Prenota
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <!-- VIAGGIO 3 -->
+
+   
+
+   
+
+        <section id="chi-siamo" class="chi-siamo">
+
+            <h2>Chi siamo</h2>
+
+            <p>
+                Organizziamo viaggi in bus dalla Calabria per concerti,
+        eventi, gite e tanto altro.
+        <br><br>
+
+        <strong>Tu pensa a divertirti. Al viaggio pensiamo noi. 🚌</strong>
+            </p>
+
+        </section>
+
+
+     <section id="contatti" class="contatti">
+
+    <h2>Contatti</h2>
+
+    <p>
+        Vuoi partecipare a uno dei nostri viaggi?
+        Compila il modulo e scrivici sui nostri social
+        per informazioni e prenotazioni.
+    </p>
+
+    <form class="modulo-contatto" action="https://formspree.io/f/xyekkwgk" method="POST">
+        <input type="hidden" name="_next" value="https://TUO-SITO.it/grazie.html">
+
+        <div class="campo">
+            <label for="nome">Nome e cognome</label>
+            <input type="text" id="nome" name="nome" placeholder="Il tuo nome e cognome">
+        </div>
+
+        <div class="campo">
+            <label for="persone">Numero di persone</label>
+            <input type="number" id="persone" name="persone" min="1" placeholder="Es. 2">
+        </div>
+
+        <div class="campo">
+            <label for="viaggio">Viaggio di interesse</label>
+            <select id="viaggio" name="viaggio">
+
+                <option value="">Seleziona un viaggio</option>
+                <option value="Camigliatello Silano">Camigliatello Silano - 18 ottobre</option>
+                <option value="Bari e Valle d'Itria">Bari e Valle d'Itria - 5/6 dicembre</option>
+
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="messaggio">Messaggio</label>
+            <textarea id="messaggio" name="messaggio" rows="5"
+                placeholder="Scrivi qui la tua richiesta..."></textarea>
+        </div>
+
+        <button type="submit" class="button">
+            Invia richiesta
+        </button>
+
+    </form>
+
+    <div class="contatti-social">
+
+        <p>Oppure scrivici direttamente sui nostri social:</p>
+
+        <div class="contatti-buttons">
+
+            <a href="https://www.instagram.com/partiinbuscalabria"
+               target="_blank"
+               class="contatto instagram">
+                Instagram
+            </a>
+
+            <a href="https://www.tiktok.com/@_.parti.in.bus.calabria_"
+               target="_blank"
+               class="contatto tiktok">
+                TikTok
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+ <footer>
+
+    <div class="footer-contenuto">
+
+        <div class="footer-info">
+            <h3>Parti in Bus Calabria</h3>
+            <p>
+                Vivi concerti, eventi, gite e nuove destinazioni
+                partendo dalla Calabria.
+            </p>
+        </div>
+
+        <div class="footer-social">
+            <h3>Seguici</h3>
+
+            <a href="https://www.instagram.com/partiinbuscalabria"
+               target="_blank">
+                Instagram
+            </a>
+
+            <a href="https://www.tiktok.com/@_.parti.in.bus.calabria_"
+               target="_blank">
+                TikTok
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Parti in Bus Calabria — Tutti i diritti riservati</p>
+    </div>
+
+</footer>
+</body>
+
+</html>

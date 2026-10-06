@@ -1,0 +1,825 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+section {
+    scroll-margin-top: 90px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #17202a;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    width: 100%;
+    padding: 18px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #f47b20;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #17202a;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f47b20;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 82vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 90px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(8, 31, 48, 0.58),
+            rgba(8, 31, 48, 0.58)
+        ),
+        url("https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=2000&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+.hero-label {
+    display: block;
+    color: #ff9a3c;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+    text-shadow: 0 2px 12px rgba(255, 94, 0, 0.685);
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+.hero-text {
+    max-width: 650px;
+    margin: 0 auto 32px;
+    color: white;
+    font-size: 28px;
+    line-height: 1.4;
+    font-weight: 600;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+.hero-buttons {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.sottotitolo {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 62px;
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 35px;
+
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+    display: inline-block;
+
+    background-color: #f47b20;
+    color: white;
+
+    padding: 15px 32px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-4px);
+
+    background-color: #ff8c2b;
+
+    box-shadow:
+        0 10px 25px rgba(244, 123, 32, 0.35);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.button-secondario {
+    display: inline-block;
+
+    background-color: transparent;
+
+    color: white;
+
+    padding: 13px 30px;
+
+    border: 2px solid white;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button-secondario:hover {
+    background-color: white;
+
+    color: #0b2538;
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================
+   SEZIONI GENERALI
+========================= */
+
+section {
+    padding: 90px 7%;
+    scroll-margin-top: 90px;
+}
+
+section h2 {
+    text-align: center;
+
+    font-size: 40px;
+
+    margin-bottom: 12px;
+
+    color: #17202a;
+
+    font-weight: 700;
+}
+section h2::after {
+    content: "";
+
+    display: block;
+
+    width: 50px;
+    height: 3px;
+
+    background-color: #f47b20;
+
+    margin: 14px auto 0;
+
+    border-radius: 10px;
+}
+
+.descrizione {
+    text-align: center;
+
+    color: #66727d;
+
+    margin-bottom: 50px;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   VIAGGI
+========================= */
+
+.viaggi {
+    background-color: white;
+}
+
+.viaggi-container {
+    max-width: 950px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.viaggio-card {
+    width: 300px;
+}
+
+
+/* =========================
+   CARD VIAGGI
+========================= */
+
+.viaggio-card {
+    background-color: white;
+
+        height: 100%;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.viaggio-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.14);
+}
+
+.viaggio-immagine {
+    width: 100%;
+    height: 180px;
+
+    overflow: hidden;
+}
+
+.viaggio-immagine img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+.viaggio-card:hover .viaggio-immagine img {
+    transform: scale(1.05);
+}
+
+.viaggio-info {
+    padding: 20px;
+}
+
+.viaggio-data {
+    display: inline-block;
+
+    color: #f47b20;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+}
+
+.viaggio-info h3 {
+    font-size: 22px;
+
+    color: #17202a;
+
+    margin-bottom: 12px;
+}
+
+.viaggio-info p {
+    color: #66727d;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.viaggio-info .button {
+    padding: 12px 22px;
+
+    font-size: 14px;
+}
+
+.viaggio-dettagli {
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #17202a !important;
+
+    margin-bottom: 15px !important;
+}
+.scadenza {
+    display: inline-block;
+
+    background-color: #fff3e8;
+    color: #f47b20;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-bottom: 18px !important;
+}
+
+.viaggio-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.prezzo {
+    color: #66727d;
+
+    font-size: 13px;
+}
+
+.prezzo strong {
+    display: block;
+
+    color: #f47b20;
+
+    font-size: 22px;
+
+    margin-top: 3px;
+}
+
+
+/* =========================
+   CHI SIAMO
+========================= */
+
+.chi-siamo {
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff7f0,
+            #f7fbfd
+        );
+}
+.chi-siamo strong {
+    display: block;
+
+    margin-top: 25px;
+
+    color: #f47b20;
+
+    font-size: 20px;
+}
+
+.chi-siamo p {
+    max-width: 750px;
+
+    margin: auto;
+
+    line-height: 1.8;
+
+    color: #56616b;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   CONTATTI
+========================= */
+
+.contatti {
+    text-align: center;
+
+    background-color: white;
+}
+
+.contatti p {
+    color: #56616b;
+
+    margin-top: 20px;
+
+    font-size: 17px;
+}
+.contatti-buttons {
+    display: flex;
+
+    justify-content: center;
+    gap: 15px;
+
+    margin-top: 30px;
+
+    flex-wrap: wrap;
+}
+
+.contatto {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+.instagram {
+    background-color: #f47b20;
+}
+
+.tiktok {
+    background-color: #17202a;
+}
+
+.contatto:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #0b2538;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 18px 20px;
+    }
+
+    nav {
+        gap: 18px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 75vh;
+
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 70px 20px;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+
+    .viaggi-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================
+   PICCOLI SCHERMI
+========================= */
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+    width: 100%;
+    min-height: 80vh;
+
+    padding: 80px 15px;
+
+    display: flex;
+    align-items: left;
+    justify-content: left;
+
+    overflow: hidden;
+}
+.hero {
+    text-align: center;
+}
+
+.hero > p:not(.sottotitolo) {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    justify-content: center;
+}
+.hero h1 {
+    width: 100%;
+    font-size: 40px;
+    line-height: 1.05;
+}
+
+.hero p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 17px;
+}
+
+    .hero h1 {
+        font-size: 38px;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 100%;
+        margin-bottom: 28px;
+    }
+
+    
+.sottotitolo {
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+.hero > p:not(.sottotitolo) {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 600px;
+}
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .button,
+    .button-secondario {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    section {
+        padding: 60px 18px;
+    }
+}
+/* =========================
+   FOOTER COMPLETO
+========================= */
+
+.footer-contenuto {
+    max-width: 950px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding-bottom: 30px;
+}
+
+.footer-info,
+.footer-social {
+    max-width: 400px;
+}
+
+.footer-info h3,
+.footer-social h3 {
+    margin-bottom: 15px;
+
+    color: #ff9a3c;
+
+    font-size: 20px;
+}
+
+.footer-info p {
+    color: #d5dde3;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+}
+
+.footer-social {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.footer-social a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #ff9a3c;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    padding-top: 25px;
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #aeb8c0;
+
+    font-size: 13px;
+}
+.modulo-contatto {
+    max-width: 650px;
+    margin: 35px auto 0;
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #17202a;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d9dfe3;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #17202a;
+    background-color: #f9fafb;
+    outline: none;
+    transition: 0.3s;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #f47b20;
+    box-shadow: 0 0 0 3px rgba(244, 123, 32, 0.12);
+    background-color: white;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.modulo-contatto .button {
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.contatti-social {
+    margin-top: 45px;
+}
+
+.contatti-social > p {
+    margin-bottom: 20px;
+}
