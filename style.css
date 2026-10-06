@@ -301,22 +301,22 @@ section h2::after {
 
 .viaggio-card {
     background-color: white;
-
-        height: 100%;
-
     border-radius: 16px;
-
     overflow: hidden;
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    box-shadow:
+        -5px 0 20px rgba(244, 123, 32, 0.08),
+         5px 0 20px rgba(244, 123, 32, 0.08);
 
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .viaggio-card:hover {
     transform: translateY(-8px);
 
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.14);
+    box-shadow:
+        -10px 0 30px rgba(244, 123, 32, 0.18),
+         10px 0 30px rgba(244, 123, 32, 0.18);
 }
 
 .viaggio-immagine {
