@@ -847,7 +847,19 @@ footer p {
     background-color: white;
     padding: 30px 25px;
     border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+    box-shadow:
+        -8px 0 25px rgba(244, 123, 32, 0.12),
+         8px 0 25px rgba(244, 123, 32, 0.12);
+
+    transition: 0.3s ease;
+}
+.passaggio:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        -12px 0 30px rgba(244, 123, 32, 0.20),
+         12px 0 30px rgba(244, 123, 32, 0.20);
 }
 
 .numero {
